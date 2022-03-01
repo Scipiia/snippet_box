@@ -1,0 +1,13 @@
+{{template "base"}}
+
+{{define "title"}}Создание новой заметки {{end}}
+
+{{define "main"}}
+<div class="snippet">
+    <div class="metadata">
+        <input>{{.Snippet.Title}}</input>
+        <input>#{{.Snippet.ID}}</input>
+        <pre><input>{{.Snippet.Content}}</input></pre>
+    </div>
+</div>
+{{end}}
